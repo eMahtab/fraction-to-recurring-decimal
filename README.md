@@ -19,6 +19,8 @@ Example 3:
 
 Input: numerator = 2, denominator = 3
 Output: "0.(6)"
+
+
 ```
 
 ## Test Cases :
@@ -35,6 +37,7 @@ Output: "0.(6)"
 | -1 / 2 or 1 / -2  | One of the numerator or denominator is negative, fraction is negative.  |
 | -1 / -2  | Both numerator and denominator are negative, should result in positive fraction.  |
 | −2147483648 / -1  | Beware of overflow if you cast to positive.  |
+| 2 / 7  | "0.(285714)" |
 
 
 # Implementation :
