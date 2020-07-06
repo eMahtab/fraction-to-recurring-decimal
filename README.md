@@ -43,14 +43,12 @@ class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
     if (numerator == 0) 
         return "0";
-        
-    if(denominator == 0)  
+    if (denominator == 0)  
         throw new IllegalArgumentException();
         
     StringBuilder fraction = new StringBuilder();
     // If either one is negative (not both)
-    if ( (numerator < 0 && denominator > 0) || 
-         (denominator < 0 && numerator > 0)) {
+    if ((numerator < 0 && denominator > 0) || (denominator < 0 && numerator > 0)) {
         fraction.append("-");
     }
     // Convert to Long or else abs(-2147483648) overflows
