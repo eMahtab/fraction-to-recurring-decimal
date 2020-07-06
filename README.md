@@ -52,8 +52,8 @@ class Solution {
         fraction.append("-");
     }
     // Convert to Long or else abs(-2147483648) overflows
-    long dividend = Math.abs(Long.valueOf(numerator));
-    long divisor = Math.abs(Long.valueOf(denominator));
+    long dividend = Math.abs((long) numerator);
+    long divisor = Math.abs((long) denominator);
     fraction.append(dividend / divisor);
     long remainder = dividend % divisor;
     if (remainder == 0) {
