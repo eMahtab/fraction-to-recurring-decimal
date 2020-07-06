@@ -22,6 +22,9 @@ Output: "0.(6)"
 ```
 
 ## Test Cases :
+Integer.MIN_VALUE = -2147483648
+Integer.MAX_VALUE = 2147483647 
+
 
 | Test case  | Explanation |
 | ------------- | ------------- |
